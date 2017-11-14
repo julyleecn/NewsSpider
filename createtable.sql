@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.16)
 # Database: newsspider
-# Generation Time: 2017-11-07 07:34:32 +0000
+# Generation Time: 2017-11-14 12:32:27 +0000
 # ************************************************************
 
 
@@ -35,7 +35,7 @@ CREATE TABLE `news_baidu` (
   `source` text,
   `body` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=24077 DEFAULT CHARSET=utf8;
 
 
 
@@ -53,18 +53,6 @@ CREATE TABLE `news_sina` (
   `publish_time` text,
   `source` text,
   `body` text,
-  `yangzhou_guazhou` int(11) DEFAULT '0',
-  `zhenjiang_changjiang` int(11) DEFAULT '0',
-  `beijing_guoji` int(11) DEFAULT '0',
-  `shanghai_jiandan` int(11) DEFAULT '0',
-  `hangzhou_xihu` int(11) DEFAULT '0',
-  `chengdu_rebo` int(11) DEFAULT '0',
-  `changsha_juzhou` int(11) DEFAULT '0',
-  `caomei` int(11) DEFAULT '0',
-  `zhangbei_caoyuan` int(11) DEFAULT '0',
-  `zhoushan_donghai` int(11) DEFAULT '0',
-  `midi` int(11) DEFAULT '0',
-  `nanjing_senlin` int(11) DEFAULT '0',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
