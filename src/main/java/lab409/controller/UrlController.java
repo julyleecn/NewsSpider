@@ -41,7 +41,8 @@ public class UrlController {
         switch(source){
             case "baidu":
                 //起始日期、终止日期、搜索关键字、是否根据标题搜索（true为根据标题，false为根据内容）
-                baiduNewsService.CrawlBaiduNewsUrl("2017-11-1", "2017-11-2", new String[]{"同济大学软件学院", "华东师范大学软件学院"}, true);
+//                baiduNewsService.CrawlBaiduNewsUrl("2017-11-1", "2017-11-2", new String[]{"同济大学软件学院", "华东师范大学软件学院"}, true);
+                baiduNewsService.CrawlBaiduNewsUrl("2007-11-14", "2017-11-14", new String[]{"安徽 经济", "安徽 就业", "安徽 消费", "安徽 投资", "安徽 创新", "安徽 收入", "安徽 出口" }, true);
                 break;
             case "sina":
                 //搜索关键字、是否根据标题搜索

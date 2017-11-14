@@ -71,9 +71,10 @@ public class BaiduNewsServiceImpl implements BaiduNewsService {
                 while (true) {
 
                     Date date = new Date(1969, 12, 30, 8, 0);
-                    Date bDate = new Date(year, month, day - 1);
+                    Date bDate = new Date(year, month, day);
+                    Date eDate = new Date(year, month, day + 1);
                     String bt = Long.toString((bDate.getTime() - date.getTime()) / 1000);
-                    String et = Long.toString((d.getTime() - date.getTime()) / 1000 - 1);
+                    String et = Long.toString((eDate.getTime() - date.getTime()) / 1000 - 1);
 
                     String url = null;
                     if (isTitle)
