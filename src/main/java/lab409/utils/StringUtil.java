@@ -36,7 +36,12 @@ public class StringUtil {
         String regEx="[^0-9]";
         Pattern p = Pattern.compile(regEx);
         Matcher m = p.matcher(s);
-        return Integer.parseInt(m.replaceAll("").trim());
+        try {
+            return Integer.parseInt(m.replaceAll("").trim());
+        }catch (Exception e){
+            return 0;
+        }
+
     }
 
 

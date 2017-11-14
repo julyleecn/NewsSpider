@@ -40,6 +40,7 @@ public class SinaNewsServiceImpl implements SinaNewsService {
             String keyword = null;
             try {
                 keyword = URLEncoder.encode(keywords[key_index], "utf-8");
+                keyword = URLEncoder.encode(keyword, "utf-8");
             } catch (Exception e) {
                 e.printStackTrace();
             }
